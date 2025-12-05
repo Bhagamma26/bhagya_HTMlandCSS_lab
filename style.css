@@ -1,0 +1,157 @@
+/* ============ RESET ============ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============ BODY BACKGROUND ============ */
+body {
+    font-family: Arial, sans-serif;
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ============ HEADER ============ */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ============ NAV BAR ============ */
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ============ BAR GRAPH ============ */
+.graph-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.graph-section h1 {
+    margin-bottom: 20px;
+}
+
+.graph {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.bar {
+    width: 60px;
+    background-color: steelblue;
+    position: relative;
+    animation: grow 2s ease forwards;
+}
+
+.bar span {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Individual bar heights */
+.bar1 { height: 30%; }
+.bar2 { height: 40%; }
+.bar3 { height: 80%; }
+
+@keyframes grow {
+    from {
+        height: 0;
+    }
+}
+
+/* ============ FORM SECTION ============ */
+.form-section {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.gmail-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border: 2px solid #333;
+    width: 300px;
+}
+
+.gmail-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gmail-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+/* Focus effect */
+.gmail-form input:focus {
+    background-color: rgba(70, 130, 180, 0.35);
+    outline: none;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f6fa5;
+}
